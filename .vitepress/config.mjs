@@ -11,18 +11,24 @@ export default defineConfig({
 		}
 	},
 	themeConfig: {
+		outline: {
+      level: [2, 3], // 顯示 h2, h3
+    },
 		nav: [
 			{ text: 'Home', link: '/' },
 			{ text: 'Examples', link: '/markdown-examples' }
 		],
 		sidebar: [
 			{
-				text: 'Examples',
+				text: "NTN",
 				items: [
-					{ text: 'Markdown Examples', link: '/markdown-examples' },
-					{ text: 'Runtime API Examples', link: '/api-examples' }
+					{ text: "Rule-based path selection in NTN", link: '/ntn/paper-1' },
 				]
 			}
 		],
 	}
 })
+
+export class Outline {
+	
+}
